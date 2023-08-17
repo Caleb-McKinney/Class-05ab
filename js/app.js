@@ -12,8 +12,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(num1, num2) {
   const sumTing = num1 + num2;
-  const concatenatedString = `The sum of ${num1} and ${num2} is ${sumTing}.`;
-  return [sumTing, concatenatedString];
+  const myString = `The sum of ${num1} and ${num2} is ${sumTing}.`;
+  return [sumTing, myString];
 }
 
 const num1 = 2;
