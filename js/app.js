@@ -13,13 +13,17 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(num1, num2) {
   const sumTing = num1 + num2;
   const myString = `The sum of ${num1} and ${num2} is ${sumTing}.`;
+  //console.log([sumTing, myString]);
   return [sumTing, myString];
 }
 
-const num1 = 2;
-const num2 = 19;
-const resultArray = sum(num1, num2);
+// const num1 = 2;
+// const num2 = 19;
+const resultArray = sum(2, 19);
 console.log(resultArray);
+// const totalArray = sum(4, 12) ;
+console.log(sum(4, 12));
+// (totalArray);
 
 // // Here is the test for sum(); uncomment it to run it
 //testSum(4, 7);
@@ -34,7 +38,6 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
 function multiply(a, b) {
   const product = a * b;
   const resultString = `The product of ${a} and ${b} is ${product}.`;
@@ -48,6 +51,10 @@ const [product, resultString] = multiply(a, b);
 console.log(resultString);
 console.log(product);
 //eslint-disable-line
+
+// Here is the test for multiply(); uncomment it to run it
+testMultiply(5, 9);
+
 
 // Here is the test for multiply(); uncomment it to run it
 //testMultiply(5, 9);
@@ -65,6 +72,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+
 function sumAndMultiply(a, b, c) {
   const sumNumb = sum(a, b);
   const varForC = sum(sumNumb[0], c)[0];
@@ -82,6 +90,21 @@ sumAndMultiply(4, 7, 5);
 
 //Here is the test for sumAndMultiply(); uncomment it to run it
 //testSumAndMultiply(4, 7, 5);
+
+// function sumAndMultiply(a, b, c) {
+//   const sumNumb = sum(a, b);
+//   const varForC = sum(sumNumb[0], c)[0];
+//   const prodNum = multiply(a, b);
+//   const prodForC = multiply(prodNum[0], c)[0];
+//   //console.log(varForC[0]); //eslint-disable-line
+//   return [varForC, prodForC];
+// }
+// sumAndMultiply(3, 4, 5);
+// console.log(sumAndMultiply(4, 8, 9));
+//sumAndMultiply(2,6,5);
+// Here is the test for sumAndMultiply(); uncomment it to run it
+// testSumAndMultiply(4,7,5);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
