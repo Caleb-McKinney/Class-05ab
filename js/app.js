@@ -76,6 +76,7 @@ function sumAndMultiply(a, b, c) {
   return [varForC, prodForC, sumString, productString];
 }
 sumAndMultiply(4, 7, 5);
+
 // console.log(sumAndMultiply(4, 7, 5));
 // sumAndMultiply(4, 7, 5);
 
