@@ -19,7 +19,9 @@ function sum(num1, num2) {
 
 // const num1 = 2;
 // const num2 = 19;
-let resultArray = sum(2, 19);
+
+const resultArray = sum(2, 19);
+
 console.log(resultArray);
 // const totalArray = sum(4, 12) ;
 console.log(sum(4, 12));
@@ -54,6 +56,7 @@ console.log(product);
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5, 9);
+
 
 // Here is the test for multiply(); uncomment it to run it
 //testMultiply(5, 9);
@@ -103,6 +106,7 @@ sumAndMultiply(4, 7, 5);
 //sumAndMultiply(2,6,5);
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
