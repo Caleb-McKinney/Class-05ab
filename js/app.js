@@ -134,12 +134,12 @@ function sumArray(numbersArray) {
   return [finalTotal, resultString];
 }
 
-const testArray = [2, 3, 4];
+//const testArray = [2, 3, 4];
 //const result = sumArray(numbers);
 //console.log(result);
 
 // Here is the test for sumArray(); uncomment it to run it
-testSumArray(testArray);
+//testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -154,12 +154,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+
 function multiplyArray(multArr) {
-  //eslint-disable-line
+  const multOne = multiply(multArr[0], multArr[1])[0]; // Call the sum function to calculate the sum of the numbers in the array
+  const finalMult = multiply(multOne, multArr[2])[0];
+  //const inputValues = numbersArray.join(",");
+  console.log('total: ', finalMult);
+ const answerString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalMult}.`;
+  return [finalMult, answerString];
+ //eslint-disable-line
 }
 
+const testArray = [2, 3, 4];
+multiplyArray(2, 3, 4);
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
