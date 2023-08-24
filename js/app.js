@@ -28,7 +28,7 @@ console.log(sum(4, 12));
 // (totalArray);
 
 // // Here is the test for sum(); uncomment it to run it
-//testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -91,7 +91,7 @@ sumAndMultiply(4, 7, 5);
 // sumAndMultiply(4, 7, 5);
 
 //Here is the test for sumAndMultiply(); uncomment it to run it
-//testSumAndMultiply(4, 7, 5);
+testSumAndMultiply(4, 7, 5);
 
 // function sumAndMultiply(a, b, c) {
 //   const sumNumb = sum(a, b);
@@ -134,12 +134,12 @@ function sumArray(numbersArray) {
   return [finalTotal, resultString];
 }
 
-//const testArray = [2, 3, 4];
+let testArray = [2, 3, 4];
 //const result = sumArray(numbers);
 //console.log(result);
-
+//testArray = [5, 6, 7];
 // Here is the test for sumArray(); uncomment it to run it
-//testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -156,7 +156,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 function multiplyArray(multArr) {
-  const multOne = multiply(multArr[0], multArr[1])[0]; // Call the sum function to calculate the sum of the numbers in the array
+  const multOne = multiply(multArr[0], multArr[1])[0]; // Call the multiplt function to calculate the product of the numbers in the array
   const finalMult = multiply(multOne, multArr[2])[0];
   //const inputValues = numbersArray.join(",");
   console.log('total: ', finalMult);
@@ -165,7 +165,7 @@ function multiplyArray(multArr) {
  //eslint-disable-line
 }
 
-const testArray = [2, 3, 4];
+//const testArray = [2, 3, 4];
 multiplyArray(2, 3, 4);
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
